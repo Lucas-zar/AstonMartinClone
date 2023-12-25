@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="example example2" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Martin</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://db.onlinewebfonts.com/c/cd3e10f583ba43f0a37a942e218f159d?family=Aston+Martin+Flare" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/696bb16e8f73823ae15789bddb92e11a?family=Aston+Martin+Flare+Medium" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/fe745451b99bfc95684c117622655670?family=Aston+Martin+Sans" rel="stylesheet">
+</head>
+<body>
+
+<section>
+    <article class="h-screen flex flex-col justify-between">
+
+        <div id="mobile-menu" class="animate-duration-[750ms] h-screen absolute bg-black z-20 w-full text-white p-4 bg-opacity-80 backdrop-blur-3xl flex justify-between flex-col hidden">
+            <div>
+                <div class="flex justify-end mb-8"><button id="menu-close"><img class="h-4" src="public/close.svg" alt=""></div></button>
+                <div class="flex flex-col gap-4 font-flare">
+                    <a href="https://www.astonmartin.com/en/"><h2>Home</h2></a>
+                    <a href="https://www.astonmartin.com/en/" class="flex justify-between"><h2>Models</h2> <img class="h-4 self-center" src="public/menu-arrrow-right.svg"></a>
+                    <a href="https://www.astonmartin.com/en/"><h2>Find a Dealer</h2></a>
+                    <a href="https://www.astonmartin.com/en/" class="flex justify-between"><h2>Owners</h2> <img class="h-4 self-center" src="public/menu-arrrow-right.svg"></a>
+                    <a href="https://www.astonmartin.com/en/" class="flex justify-between"><h2>Our World</h2> <img class="h-4 self-center" src="public/menu-arrrow-right.svg"></a>
+                    <a href="https://www.astonmartin.com/en/"><h2>Experiences</h2></a>
+                    <a href="https://www.astonmartin.com/en/"><h2>Store</h2></a>
+                    <a href="https://www.astonmartin.com/en/"><h2>F1 Team</h2></a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 mt-6 font-sans-ast text-sm">
+                <button class="bg-white w-full p-3 text-black"><h1>Configure</h1></button>
+                <button class="bg-white w-full p-3 bg-opacity-40 backdrop-blur-lg"><h1 class="text-white">Enquiry</h1></button>
+                <div class="font-sans-ast flex justify-between">
+                    <span class="flex gap-2" ><img class="h-4" src="public/international-svgrepo-com.svg" alt=""><h2>International site</h2></span>
+                    <img class="h-4" src="public/arrow-down-bold-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <video id="video3" class="object-cover absolute z-0 h-screen w-full" autoplay muted src="public/video-3.mp4"></video>
+        <video id="video2" class="object-cover absolute z-0 h-screen w-full" autoplay muted src="public/video-2.mp4"></video>
+        <video id="video1" class="object-cover absolute z-0 h-screen w-full" autoplay muted src="public/video-1.mp4"></video>
+
+        <nav class="bg-black backdrop-blur-3xl bg-opacity-60 z-10 text-white flex justify-center relative">
+            <button id="burger" class="absolute left-0 top-1"><img class="h-4 m-4" src="public/burger.svg"></button>
+            <button><img class="w-20" src="public/Aston Martin logo.svg"></button>
+        </nav>
+        <div class="z-10 p-4">
+            <div class="text-white">
+                <h2 class="text-lg font-serif font-thin">Power. Driven.</h2>
+                <h1 class="text-4xl font-flare">DBX707</h1>
+            </div>
+            <div class="flex flex-col gap-4 mt-6 font-sans-ast text-sm">
+                <button class="bg-white w-full p-3"><h1>Explore</h1></button>
+                <button class="bg-white w-full p-3 bg-opacity-40 backdrop-blur-lg"><h1 class="text-white">Enquire</h1></button>
+            </div>
+            <div class="flex justify-between mt-4">
+                <button><img class="h-7" src="public/arrow-left-svgrepo-com.svg" alt=""></button>
+                <div class="flex gap-2">
+                    <progress id="bar1" value="0" max="100" class="w-6 h-0.5 self-center"></progress>
+                    <progress id="bar2" value="0" max="100" class="w-6 h-0.5 self-center"></progress>
+                    <progress id="bar3" value="0" max="100" class="w-6 h-0.5 self-center"></progress>
+                </div>
+                <button><img class="h-7" src="public/arrow-right-svgrepo-com.svg" alt=""></button>
+            </div>
+        </div>
+    </article>
+</section>
+<script src="index.js"></script>
+</body>
+</html>

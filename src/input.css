@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("/public/AstonMartinFlare_Bd.woff2") format("woff"),
+    }
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+.example2 {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+progress::-webkit-progress-value {
+    background: #fff;
+}
+
+.font-flare{
+    font-family: "Aston Martin Flare";
+}
+
+.font-flare-medium{
+    font-family: "Aston Martin Flare Medium";
+}
+
+.font-sans-ast{
+    font-family: "Aston Martin Sans";
+}
+
+*{
+
+}
